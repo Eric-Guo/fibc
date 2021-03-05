@@ -1,0 +1,22 @@
+PATH
+  remote: .
+  specs:
+    fibc (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (13.0.3)
+    rake-compiler (1.1.1)
+      rake
+
+PLATFORMS
+  x86_64-darwin-19
+
+DEPENDENCIES
+  fibc!
+  rake (~> 13.0)
+  rake-compiler
+
+BUNDLED WITH
+   2.2.13

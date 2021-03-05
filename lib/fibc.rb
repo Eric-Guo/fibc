@@ -4,6 +4,8 @@ require_relative "fibc/version"
 require_relative "fibc/fibc"
 
 module Fibc
-  class Error < StandardError; end
-  # Your code goes here...
+  def self.fib_pure(n)
+    return n if n == 0 || n == 1
+    fib_pure(n-1) + fib_pure(n-2)
+  end
 end
