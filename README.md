@@ -1,8 +1,7 @@
 # Fibc
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/fibc`. To experiment with that code, run `bin/console` for an interactive prompt.
+Returns the n-th integer value in the Fibonacci Sequence, see discuss at [ruby-china](https://ruby-china.org/topics/40862).
 
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
@@ -22,7 +21,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Run the irb
+
+```ruby
+require 'fibc'
+measure
+Fibc.fib_pure(4)  # processing time: 0.000034s
+Fibc.fib(4)       # processing time: 0.000030s
+Fibc.fib_pure(40) # processing time: 15.568888s
+Fibc.fib(40)      # processing time: 0.511246s
+```
 
 ## Development
 
@@ -32,4 +40,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/fibc.
+Bug reports and pull requests are welcome on GitHub at https://github.com/Eric-Guo/fibc.
